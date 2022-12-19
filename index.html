@@ -7,11 +7,13 @@
 <p id="demo">demo</p>
 <p id="text">bjdj</p>
 <script>
+document.getElementById("demo").innerHTML= window.location.protocol + window.location.hostname;
+
 const parsedUrl = new URL(window.location.href);
 //document.getElementById("text").innerHTML 
 const idlink=parsedUrl.searchParams.get("id");
+
 const bocong = idlink.replace("+","");
-document.getElementById("demo").innerHTML= window.location.protocol + window.location.hostname;
 document.getElementById("text").innerHTML= bocong;
 
 </script>
