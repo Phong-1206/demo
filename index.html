@@ -10,7 +10,7 @@
 document.getElementById("demo").innerHTML= window.location.protocol + window.location.hostname;
 
 const parsedUrl = new URL(window.location.href);
-//document.getElementById("text").innerHTML 
+document.getElementById("text").innerHTML = parsedUrl.origin;
 console.log(parsedUrl.origin);
 const idlink=parsedUrl.searchParams.get("id");
 const bocong = idlink.replace("+","");
