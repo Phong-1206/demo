@@ -11,8 +11,8 @@ document.getElementById("demo").innerHTML= window.location.protocol + window.loc
 
 const parsedUrl = new URL(window.location.href);
 //document.getElementById("text").innerHTML 
+console.log(parsedUrl.origin);
 const idlink=parsedUrl.searchParams.get("id");
-
 const bocong = idlink.replace("+","");
 document.getElementById("text").innerHTML= bocong;
 
